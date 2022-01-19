@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Unsigned math operations with safety checks that revert on error",
+			"kind": "dev",
+			"methods": {},
+			"title": "SafeMath",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SafeMath.sol": "SafeMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SafeMath.sol": {
+			"keccak256": "0x42c7ccc20030964476ad04782ae775b5ff7481232b023c266014470ed012e20d",
+			"urls": [
+				"bzz-raw://44a0130f2783162e9d0cf698f17023e1951a91557dd0cc7a49bbffcf835c3913",
+				"dweb:/ipfs/QmZw9bLy3K2rQTu3i1xmwkrrSPCbvcwFLSL7XSJVamddns"
+			]
+		}
+	},
+	"version": 1
+}

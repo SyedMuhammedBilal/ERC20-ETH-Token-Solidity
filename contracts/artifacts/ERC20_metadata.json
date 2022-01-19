@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC20Token.sol": "ERC20"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC20Token.sol": {
+			"keccak256": "0x729c80cce46375d167e24339b5d5fff82b928454ca09ed03412443ca5833ae53",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5188f32325f7f18cabdf3e2ef5d32b2b5224e5f4da1c2ed4595d7be847aa8adf",
+				"dweb:/ipfs/Qma4hEvPxn37JAmHLBzcXuREj6K5xEuRDwiPD19jk8Go15"
+			]
+		},
+		"contracts/SafeMath.sol": {
+			"keccak256": "0x42c7ccc20030964476ad04782ae775b5ff7481232b023c266014470ed012e20d",
+			"urls": [
+				"bzz-raw://44a0130f2783162e9d0cf698f17023e1951a91557dd0cc7a49bbffcf835c3913",
+				"dweb:/ipfs/QmZw9bLy3K2rQTu3i1xmwkrrSPCbvcwFLSL7XSJVamddns"
+			]
+		}
+	},
+	"version": 1
+}
