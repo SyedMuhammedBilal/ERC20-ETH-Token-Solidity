@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EthInterface.sol": "EthInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EthInterface.sol": {
+			"keccak256": "0xdad2aa5d9043be8fd89f7fd1fa5fa8257781356846af5fd68b3cc37a1362da40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ab401c115610cdb2b628c002a2c995e4cbaae342d3b934dc4dc6d14525439d80",
+				"dweb:/ipfs/QmY7fazszWpyYLxEK3JLJ8ynXEoirCpMM93Wbsx5T5Ck4p"
+			]
+		}
+	},
+	"version": 1
+}
