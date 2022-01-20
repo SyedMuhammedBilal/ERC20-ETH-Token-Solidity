@@ -11,24 +11,73 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "_sender",
+						"name": "owner",
 						"type": "address"
 					},
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "_to",
+						"name": "spender",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "_value",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
 				"name": "Transfer",
 				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -57,6 +106,35 @@
 					}
 				],
 				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -95,19 +173,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ERC20Token.sol": {
-			"keccak256": "0x729c80cce46375d167e24339b5d5fff82b928454ca09ed03412443ca5833ae53",
+		"contracts/ERC20Interface.sol": {
+			"keccak256": "0x6b89f901c35fff7397521a24e293a239de6f68de877d5ec7997245b5e8a32525",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5188f32325f7f18cabdf3e2ef5d32b2b5224e5f4da1c2ed4595d7be847aa8adf",
-				"dweb:/ipfs/Qma4hEvPxn37JAmHLBzcXuREj6K5xEuRDwiPD19jk8Go15"
+				"bzz-raw://2fa8c74db54dbf12343d486ce1398b1a408d3ff33da36fd8b03b9840c9a0073d",
+				"dweb:/ipfs/QmQzp5BygqGj7Z4A5xx1Kuc2hPprY764PAwaCcHKW4ZH1G"
+			]
+		},
+		"contracts/ERC20Token.sol": {
+			"keccak256": "0x381ae0cca16c4d07708a994f2fa39d886d2dcfa3dc3105e3a295129103e7d252",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://caec4ce1923ba4bd760c7ebb137a031f27ee4463c59f3c320116619d7e938d18",
+				"dweb:/ipfs/QmSncrwev9jAteB5vnsPQmu1FXpKbCfQDq9yHPN6p8yVga"
 			]
 		},
 		"contracts/SafeMath.sol": {
-			"keccak256": "0x42c7ccc20030964476ad04782ae775b5ff7481232b023c266014470ed012e20d",
+			"keccak256": "0x4a42c422c8660f1ddbcd38d0b45d5c63aed45dfe1a6babcbf09d66a5cad1d669",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://44a0130f2783162e9d0cf698f17023e1951a91557dd0cc7a49bbffcf835c3913",
-				"dweb:/ipfs/QmZw9bLy3K2rQTu3i1xmwkrrSPCbvcwFLSL7XSJVamddns"
+				"bzz-raw://8b69acad78b45af45dc4416c5d5c4a8004e3836d109d23fab422a662c8fab942",
+				"dweb:/ipfs/QmR1Bn3pMbehMFaubWQsRwQEw1z79gMVsaEz2PUM7WXESj"
 			]
 		}
 	},

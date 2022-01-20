@@ -11,6 +11,31 @@
 					{
 						"indexed": true,
 						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
 						"name": "from",
 						"type": "address"
 					},
@@ -34,6 +59,30 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
@@ -48,6 +97,35 @@
 					{
 						"internalType": "bool",
 						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
 						"type": "bool"
 					}
 				],
@@ -83,10 +161,11 @@
 	},
 	"sources": {
 		"contracts/ERC20Interface.sol": {
-			"keccak256": "0xd1a520d12b364391e5af2801491458003a3b9f4e09ccafd37562052ceeee0aa2",
+			"keccak256": "0x6b89f901c35fff7397521a24e293a239de6f68de877d5ec7997245b5e8a32525",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://468abb785ef14e78f18ba19f40f979434c025dc2a34c60a2b75baf8b4c98aede",
-				"dweb:/ipfs/QmdiCfzBCDierYXqsGxVaq3WRDwQm8Jrxym3tuA9gFg1nC"
+				"bzz-raw://2fa8c74db54dbf12343d486ce1398b1a408d3ff33da36fd8b03b9840c9a0073d",
+				"dweb:/ipfs/QmQzp5BygqGj7Z4A5xx1Kuc2hPprY764PAwaCcHKW4ZH1G"
 			]
 		}
 	},
